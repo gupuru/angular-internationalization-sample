@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="not-found" datatype="html">
+        <source>
+  そんなページはない
+</source>
+    <target>
+  En Not Found
+</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/page-not-found/page-not-found.component.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="language-status" datatype="html">
+         <source>
+   日本語ぽん
+ </source>
+    <target>
+  English Now
+</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.component.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

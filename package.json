@@ -4,11 +4,17 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
+    "start": "ng serve --aot",
+    "start-jp": "ng serve --aot --locale ja --i18n-format xlf --i18n-file src/locale/messages.ja.xlf",
+    "start-en": "ng serve --aot --locale en --i18n-format xlf --i18n-file src/locale/messages.en.xlf",
+    "build": "ng build --aot",
+    "build-ja": "ng build --aot --output-path dist/ja --base-href ja --locale ja --i18n-format xlf --i18n-file src/locale/messages.ja.xlf",
+    "build-en": "ng build --aot --output-path dist/en --base-href en --locale en --i18n-format xlf --i18n-file src/locale/messages.en.xlf",
+    "build-i18n": "ng build --aot -bh /ja/;for lang in ja en; do ng build --aot --output-path=dist/$lang --base-href /$lang/ --i18n-file src/locale/messages.$lang.xlf --i18n-format=xlf --locale=$lang; done",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "i18n": "ng-xi18n"
   },
   "private": true,
   "dependencies": {
